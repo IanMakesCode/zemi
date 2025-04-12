@@ -1,0 +1,170 @@
+/* styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: translateY(-3px);
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #ff007f, #ffcc00);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.btn {
+    background: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff007f;
+    transform: scale(1.05);
+}
+
+/* Games Section */
+.games {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.games h2 {
+    margin-bottom: 20px;
+}
+
+.game-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game-icons img {
+    width: 100px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.game-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact-hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #007fff, #00ccff);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact-form-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact-form-section form {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .game-icons img {
+        width: 80px;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
